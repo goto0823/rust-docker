@@ -1,0 +1,12 @@
+services:
+  rust:
+   image: rust:latest
+   volumes:
+    - ./src:/var/www/html
+   working_dir: /var/www/html
+   environment:
+    - USER=root
+   tty: true
+   stdin_open: true
+
+
